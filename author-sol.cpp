@@ -32,7 +32,7 @@ void test_case(int& tc) {
 		}
 	}
 	for (int i = 0; i < 26; i++) {
-		if (freq_pairs[i] * 2 > pairs) {
+		if (freq_pairs[i] * 2 > pairs) { // If freq_pairs[i] > pairs / 2, then we need to swap instead the characters s[i] != s[n-1-i]
 			cout << freq_pairs[i] << "\n";
 			return;
 		}
